@@ -9,6 +9,7 @@ then
 	then
 		echo "$FILE is a regular file"
 	fi
+
 	if [ -s $FILE ]
 	then
 		echo "$FILE is not empty"
