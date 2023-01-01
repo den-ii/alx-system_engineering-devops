@@ -4,7 +4,7 @@ if [ $# -ne 1 ]
 then
     echo "Usage: manage_my_process {start|stop|restart}"
 else
-    case $! in 
+    case $1 in 
         start)
             ./manage_my_process &
             echo $$ > /var/run/my_process.PID
