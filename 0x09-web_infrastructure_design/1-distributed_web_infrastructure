@@ -1,0 +1,31 @@
+https://drive.google.com/file/d/1qAY3ZOk-ygUfavuBpjOo5anKjvFTaCR7/view?usp=sharing
+
+To increase speed and performance
+Round Robin Algorithm
+
+Active-Active
+
+Difference between Acive-Active and Active-Passive
+In an active-active setup, all servers in the pool are actively serving traffic at the same time. The load balancer distributes traffic across all servers in the pool, and each server shares an equal portion of the traffic load. This configuration is suitable for applications that require high performance and scalability. In an active-active setup, if any server in the pool fails, the load balancer redirects traffic to the remaining healthy servers, and the overall system continues to function.
+
+Active-passive Load Balancer Setup:
+
+In an active-passive setup, only one server in the pool is actively serving traffic, while the others are in standby mode. The load balancer monitors the health of the active server, and if it fails, the load balancer automatically redirects traffic to the standby server, which becomes the new active server. This configuration is suitable for applications with moderate traffic loads and lower scalability requirements. In an active-passive setup, resources are not fully utilized, as only one server is actively serving traffic at any given time, and the standby server remains idle until needed.
+
+To summarize, an active-active setup maximizes resource utilization and provides high availability for high-traffic applications, while an active-passive setup provides a lower-cost solution for applications with moderate traffic loads and lower scalability requirements.
+
+The application sends write requests to the primary database server, which updates the database and sends the changes to all the replica servers. The replicas replicate the changes and serve read-only queries from the application. If the primary server fails, one of the replica servers can be promoted to become the new primary server, and the others will continue to act as replicas.
+
+There are several issues that could arise with a three-server web infrastructure hosting the website www.foobar.com. Here are some examples:
+
+Single Point of Failure: A three-server setup usually involves one load balancer and two web servers. If the load balancer fails, the website will be unavailable, and the entire setup will become a single point of failure. To avoid this, a backup or redundant load balancer can be added.
+
+Capacity Limitations: A three-server setup may not be sufficient to handle high traffic loads or sudden spikes in traffic. If the traffic exceeds the capacity of the servers, the website may become slow or unresponsive. To handle higher traffic, additional web servers can be added to the infrastructure.
+
+Security Vulnerabilities: A three-server setup may be vulnerable to security breaches, such as DDoS attacks or hacking attempts. It is essential to implement proper security measures, such as firewalls, SSL/TLS encryption, and regular security updates.
+
+Maintenance Downtime: Performing maintenance on a three-server setup can be challenging, as it may require taking down the entire infrastructure to perform updates or repairs. This can cause downtime for the website and disrupt users' access. To minimize downtime, maintenance tasks can be scheduled during off-peak hours or staggered across the servers.
+
+Scalability: A three-server setup may not be scalable enough to handle future growth or expansion. It is important to plan for future scalability and have a strategy in place to add more servers or upgrade the infrastructure as needed.
+
+Overall, a three-server web infrastructure can be a good starting point for a small or medium-sized website, but it is important to be aware of these issues and plan accordingly to avoid problems and ensure high availability and performance for the website.
