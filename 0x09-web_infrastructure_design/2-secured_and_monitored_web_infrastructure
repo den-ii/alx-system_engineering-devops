@@ -1,0 +1,26 @@
+https://imgur.com/F53GXdo
+
+In this diagram, the load balancer sits in front of the two web servers, which are responsible for serving HTTP/HTTPS traffic for the website. The load balancer is also responsible for handling SSL/TLS encryption and distributing traffic evenly across the two web servers.
+
+The database server sits separately and is responsible for storing the website's data. It can be configured as a primary-replica cluster for high availability and fault tolerance.
+
+Overall, this three-server web infrastructure provides a secure and reliable environment for hosting the website www.foobar.com, with high availability, scalability, and fault tolerance.
+
+Https is used to secure sensitive data.
+
+Overall, Nagios uses a combination of plugins, probes, SNMP, and syslog to collect data from various sources and monitor the health and performance of a system. The collected data is then used to generate alerts and reports, which can help system administrators identify and troubleshoot issues in a timely manner.
+
+
+Install Nagios on a separate server or a virtual machine. You can find installation instructions for Nagios on their official website.
+
+Configure Nagios to monitor your web server. This involves defining the host and service that Nagios will monitor. For example, you can define your web server as a host and configure Nagios to monitor the HTTP service that runs on port 80.
+
+Install a plugin on your web server that can monitor QPS. There are several plugins available for Nagios that can monitor QPS, such as check_http, check_apache_status, and check_nginx_status. These plugins can be installed and configured to monitor QPS for your web server.
+
+Add the QPS monitoring plugin as a service for your web server in Nagios. This involves adding the plugin command and arguments to the Nagios configuration file for the service.
+
+Configure the QPS threshold values for the Nagios service. This involves setting the warning and critical threshold values for the QPS, which will trigger alerts if the QPS goes above or below these values.
+
+Test the Nagios configuration and make sure the QPS monitoring is working correctly. You can do this by generating some load on your web server and monitoring the QPS values in Nagios.
+
+Scalability and capacity planning: As traffic to the website grows, the web infrastructure must be able to scale to accommodate the increased traffic. 
